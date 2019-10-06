@@ -18,8 +18,6 @@ public class SessionEndedRequestHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        return input.getResponseBuilder()
-                .withSpeech("this is something")
-                .build();
+        return input.getResponseBuilder().build();
     }
 }
